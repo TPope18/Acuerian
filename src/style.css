@@ -5,6 +5,20 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+section{
+  background-color: white;
+  border: none;
+}
+.test{
+display: flex;
+justify-content: space-around;
+padding: 60px;
+position: relative; /* Added position relative */
+z-index: 1;
+margin-top: 100vh;
+height: 100vh;
+}
+
 .base{
   position: fixed;
   top: 0;
@@ -37,7 +51,7 @@
   font-size: 20px;
   color: black;
   cursor: pointer;
-  background: linear-gradient(-135deg, #020024, #00ff51);
+  background: linear-gradient(-135deg, #084300, #00ff51);
   transition: all 0.5s ease-in-out;
 }
 #active:checked ~ .menu-btn{
