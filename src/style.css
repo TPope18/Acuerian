@@ -6,19 +6,14 @@
   font-family: 'Poppins', sans-serif;
 }
 section{
-  background-color: white;
+  background-color: green;
   border: none;
+  height: 100vh;
 }
-.test{
-display: flex;
-justify-content: space-around;
-padding: 60px;
-position: relative; /* Added position relative */
-z-index: 1;
+.about{
+position: relative; 
 margin-top: 100vh;
-height: 100vh;
 }
-
 .base{
   position: fixed;
   top: 0;
