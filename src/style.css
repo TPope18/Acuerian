@@ -21,7 +21,17 @@ margin-top: 100vh;
 opacity: 0;
 filter: blur(5px);
 transform: translateX(-100%);
-transition: all 4s;
+transition: all 5s;
+}
+.h2{
+  padding: 20px;
+}
+.mySlides img{
+  width: 700px;
+  border-radius: 25px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 .show{
   opacity: 1;
