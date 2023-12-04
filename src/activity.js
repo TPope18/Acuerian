@@ -49,10 +49,10 @@ function showSlides() {
 
     // Display the current slide with a fade-in effect
     slides[slideIndex - 1].style.display = "block";
-    fadeIn(slides[slideIndex - 1], 2500); // Adjust the duration as needed
+    fadeIn(slides[slideIndex - 1], 2300); // Adjust the duration as needed
 
     // Set timeout for the next slide
-    setTimeout(showSlides, 5000); // Change slide every 5 seconds (adjust as needed)
+    setTimeout(showSlides, 6000); // Change slide every 5 seconds (adjust as needed)
 }
 
 // Function to apply fade-in effect
