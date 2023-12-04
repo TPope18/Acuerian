@@ -12,6 +12,21 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.about');
 hiddenElements.forEach((el) => observer.observe(el));
 
+const observer2 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if(entry.isIntersecting){
+            entry.target.classList.add('show2');
+        } else {
+            entry.target.classList.remove('show2');
+        }
+    });
+});
+
+const hiddenElements2 = document.querySelectorAll('.upcoming-events');
+hiddenElements2.forEach((el) => observer2.observe(el));
+
+
 var slideIndex = 0;
 
 function showSlides() {
@@ -64,3 +79,40 @@ function fadeIn(element, duration) {
 // Start the auto-scrolling
 showSlides();
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.getElementById('active').checked = false;
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const mailIcon = document.querySelector(".fa-envelope");
+    if (mailIcon) {
+      mailIcon.addEventListener("click", function () {
+        window.open("mailto:acuerianllc@gmail.com");
+      });
+    }
+  });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const instaIcon = document.querySelector(".fa-instagram");
+    if (instaIcon) {
+      instaIcon.addEventListener("click", function () {
+        window.open("https://www.instagram.com/acuerian/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==", "_blank");
+      });
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const tiktok = document.querySelector(".fa-tiktok");
+    if (tiktok) {
+      tiktok.addEventListener("click", function () {
+        window.open("https://www.tiktok.com/@acuerian?is_from_webapp=1&sender_device=pc", "_blank");
+      });
+    }
+  });
