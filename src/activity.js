@@ -116,3 +116,12 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const pinterest = document.querySelector(".fa-pinterest");
+    if (pinterest) {
+      pinterest.addEventListener("click", function () {
+        window.open("https://pin.it/1aVP7L3", "_blank");
+      });
+    }
+  });
