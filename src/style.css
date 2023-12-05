@@ -3,7 +3,7 @@
   margin: 0px;
   padding: 0px;
   /* box-sizing: border-box; */
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Optima', sans-serif;
 }
 body{
   background-color: black;
@@ -177,10 +177,13 @@ span{
   flex: 1;
 }
 .mission-text p{
-  text-size-adjust: small;
+  text-size-adjust: large;
+  font-size: larger;
+  line-height: 2;
 }
 .mission-text h2 {
   margin-bottom: 10px;
+  font-size: xx-large;
 }
 
 .mission-image img {
@@ -192,7 +195,7 @@ span{
 }
 .gallery{
   background-color: #22311d;
-  color: #939393;
+  color: white;
 }
 .h2{
   padding: 20px;
@@ -331,7 +334,7 @@ input[type="checkbox"]{
   position: absolute;
   text-align: center;
   bottom: 50px;
-  left: 49.2%;
+  left: 49.4%;
   font-size: 15px;
   z-index: 100%;
   text-decoration: none;
